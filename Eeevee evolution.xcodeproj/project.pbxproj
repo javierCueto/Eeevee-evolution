@@ -56,15 +56,39 @@
 		0F09DFBD2B8E6AE8005541A5 /* Eeevee evolution */ = {
 			isa = PBXGroup;
 			children = (
-				0F09DFBE2B8E6AE8005541A5 /* AppDelegate.swift */,
-				0F09DFC02B8E6AE8005541A5 /* SceneDelegate.swift */,
-				0F09DFC22B8E6AE8005541A5 /* ViewController.swift */,
-				0F09DFC42B8E6AE8005541A5 /* Main.storyboard */,
-				0F09DFC72B8E6AEB005541A5 /* Assets.xcassets */,
+				0F09DFD42B8E6B5F005541A5 /* Resources */,
+				0F09DFD32B8E6B49005541A5 /* Supporting Files */,
+				0F09DFD22B8E6B35005541A5 /* Scenes */,
 				0F09DFC92B8E6AEB005541A5 /* LaunchScreen.storyboard */,
 				0F09DFCC2B8E6AEB005541A5 /* Info.plist */,
 			);
 			path = "Eeevee evolution";
+			sourceTree = "<group>";
+		};
+		0F09DFD22B8E6B35005541A5 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				0F09DFC42B8E6AE8005541A5 /* Main.storyboard */,
+				0F09DFC22B8E6AE8005541A5 /* ViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0F09DFD32B8E6B49005541A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F09DFBE2B8E6AE8005541A5 /* AppDelegate.swift */,
+				0F09DFC02B8E6AE8005541A5 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0F09DFD42B8E6B5F005541A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0F09DFC72B8E6AEB005541A5 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
