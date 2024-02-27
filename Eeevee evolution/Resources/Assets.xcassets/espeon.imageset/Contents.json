@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "espeon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "espeon.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "glaceon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "glaceon.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "jolteon.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "jolteon.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
