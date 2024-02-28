@@ -50,7 +50,7 @@
         <!--Eevee-->
         <scene sceneID="Leg-Q6-rUr">
             <objects>
-                <viewController id="hTM-Eh-SkO" sceneMemberID="viewController">
+                <viewController id="hTM-Eh-SkO" customClass="EeveeEvolvedViewController" customModule="Eeevee_evolution" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q7B-B8-n2v">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Eevee" id="Jmz-du-Znl"/>
+                    <connections>
+                        <outlet property="eeveeImageView" destination="4tP-H0-eeT" id="0qe-CF-WuV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7DL-jV-4s4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
