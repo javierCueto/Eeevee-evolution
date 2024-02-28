@@ -14,6 +14,8 @@
 		0F09DFC82B8E6AEB005541A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F09DFC72B8E6AEB005541A5 /* Assets.xcassets */; };
 		0F09DFCB2B8E6AEB005541A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F09DFC92B8E6AEB005541A5 /* LaunchScreen.storyboard */; };
 		0F09DFD62B8ECAA6005541A5 /* EeveeEvolvedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09DFD52B8ECAA6005541A5 /* EeveeEvolvedViewController.swift */; };
+		0F09DFD92B8ECE0C005541A5 /* Eevee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09DFD82B8ECE0C005541A5 /* Eevee.swift */; };
+		0F09DFDC2B8ECE57005541A5 /* EeveeEvolutionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F09DFDB2B8ECE57005541A5 /* EeveeEvolutionHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		0F09DFCA2B8E6AEB005541A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F09DFCC2B8E6AEB005541A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F09DFD52B8ECAA6005541A5 /* EeveeEvolvedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeveeEvolvedViewController.swift; sourceTree = "<group>"; };
+		0F09DFD82B8ECE0C005541A5 /* Eevee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eevee.swift; sourceTree = "<group>"; };
+		0F09DFDB2B8ECE57005541A5 /* EeveeEvolutionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EeveeEvolutionHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 		0F09DFBD2B8E6AE8005541A5 /* Eeevee evolution */ = {
 			isa = PBXGroup;
 			children = (
+				0F09DFDA2B8ECE40005541A5 /* Helper */,
+				0F09DFD72B8ECDFD005541A5 /* Model */,
 				0F09DFD42B8E6B5F005541A5 /* Resources */,
 				0F09DFD32B8E6B49005541A5 /* Supporting Files */,
 				0F09DFD22B8E6B35005541A5 /* Scenes */,
@@ -92,6 +98,22 @@
 				0F09DFC72B8E6AEB005541A5 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0F09DFD72B8ECDFD005541A5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0F09DFD82B8ECE0C005541A5 /* Eevee.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0F09DFDA2B8ECE40005541A5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				0F09DFDB2B8ECE57005541A5 /* EeveeEvolutionHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,8 +189,10 @@
 			files = (
 				0F09DFC32B8E6AE8005541A5 /* ViewController.swift in Sources */,
 				0F09DFBF2B8E6AE8005541A5 /* AppDelegate.swift in Sources */,
+				0F09DFDC2B8ECE57005541A5 /* EeveeEvolutionHelper.swift in Sources */,
 				0F09DFD62B8ECAA6005541A5 /* EeveeEvolvedViewController.swift in Sources */,
 				0F09DFC12B8E6AE8005541A5 /* SceneDelegate.swift in Sources */,
+				0F09DFD92B8ECE0C005541A5 /* Eevee.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

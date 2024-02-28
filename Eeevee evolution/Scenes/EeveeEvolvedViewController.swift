@@ -17,8 +17,11 @@ final class EeveeEvolvedViewController: UIViewController {
   }
   
   private func configUserInterface() {
-    title = "Vaporeon"
-    view.backgroundColor = .systemCyan
-    eeveeImageView.image = UIImage(named: "vaporeon")
+    let eeveeEvolutionHelper = EeveeEvolutionHelper()
+    let eeveeEvolved = eeveeEvolutionHelper.evolve()
+    title = eeveeEvolved.name.capitalized
+    view.backgroundColor = eeveeEvolved.color
+    eeveeImageView.image = UIImage(named: eeveeEvolved.name)
+    navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
   }
 }
