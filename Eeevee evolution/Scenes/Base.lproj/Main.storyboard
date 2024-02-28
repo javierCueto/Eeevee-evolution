@@ -26,6 +26,9 @@
                                 <rect key="frame" x="159" y="435" width="75" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Evolve"/>
+                                <connections>
+                                    <segue destination="YgE-ec-6bm" kind="presentation" id="7BB-Sd-cp7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -43,6 +46,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135.1145038167939" y="4.9295774647887329"/>
+        </scene>
+        <!--Eevee-->
+        <scene sceneID="Leg-Q6-rUr">
+            <objects>
+                <viewController id="hTM-Eh-SkO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q7B-B8-n2v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eevee" translatesAutoresizingMaskIntoConstraints="NO" id="4tP-H0-eeT">
+                                <rect key="frame" x="0.0" y="253" width="393" height="336"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="393" id="O1F-7i-qek"/>
+                                    <constraint firstAttribute="height" constant="336" id="qi3-cd-k0G"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0rd-UO-GqE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4tP-H0-eeT" firstAttribute="centerX" secondItem="q7B-B8-n2v" secondAttribute="centerX" id="NbD-eo-cpQ"/>
+                            <constraint firstItem="4tP-H0-eeT" firstAttribute="centerY" secondItem="q7B-B8-n2v" secondAttribute="centerY" id="d8U-Hy-Ep1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Eevee" id="Jmz-du-Znl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7DL-jV-4s4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2159.5419847328244" y="-23.239436619718312"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XGa-sC-E48">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YgE-ec-6bm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ixy-Ck-lqJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hTM-Eh-SkO" kind="relationship" relationship="rootViewController" id="o6j-dc-ig2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LBx-ol-Ab2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1232.824427480916" y="-23.239436619718312"/>
         </scene>
     </scenes>
     <resources>
