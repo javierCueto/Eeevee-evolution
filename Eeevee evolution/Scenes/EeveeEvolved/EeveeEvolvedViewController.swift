@@ -9,7 +9,13 @@ import UIKit
 
 final class EeveeEvolvedViewController: UIViewController {
   
-  @IBOutlet weak var eeveeImageView: UIImageView!
+  private let eeveeImageView: UIImageView = {
+    let imageView = UIImageView()
+    imageView.translatesAutoresizingMaskIntoConstraints = false
+    imageView.image = UIImage(named: "eevee")
+    imageView.contentMode = .scaleAspectFit
+    return imageView
+  }()
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,6 +23,12 @@ final class EeveeEvolvedViewController: UIViewController {
   }
   
   private func configUserInterface() {
+    view.addSubview(eeveeImageView)
+    eeveeImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    eeveeImageView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    eeveeImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+    eeveeImageView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+    
     let eeveeEvolutionHelper = EeveeEvolutionHelper()
     let eeveeEvolved = eeveeEvolutionHelper.evolve()
     title = eeveeEvolved.name.capitalized

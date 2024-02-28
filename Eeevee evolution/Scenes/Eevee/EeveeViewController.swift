@@ -42,6 +42,15 @@ class EeveeViewController: UIViewController {
     view.addSubview(evolveButton)
     evolveButton.topAnchor.constraint(equalTo: eeveeImageView.bottomAnchor, constant: 50).isActive = true
     evolveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+    
+    evolveButton.addTarget(self, action: #selector(evolveButtonAction), for: .touchUpInside)
+  }
+  
+  @objc
+  private func evolveButtonAction() {
+    let eeveeEvolvedViewController = EeveeEvolvedViewController()
+    let navigationController = UINavigationController(rootViewController: eeveeEvolvedViewController)
+    present(navigationController, animated: true)
   }
 }
 
